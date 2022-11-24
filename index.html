@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>get-ip あなたのIPアドレスを表示します</title>
+		<meta name="description" content="あなたのIPアドレスを表示します。">
+		<meta name="keywords" content="IP,アドレス">
+	</head>
+
+	<body>
+<script type="application/javascript">
+  function getIP(json) {
+    document.write("My public IP address is: ", json.ip);
+  }
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+	</body>
+</html>
